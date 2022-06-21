@@ -1,9 +1,9 @@
 ---
 title: Документация Sass
-index: true
 icon: brands fa-sass
 category:
   - Sass
+  - Документация Sass
 ---
 
 ## Руководство Sass

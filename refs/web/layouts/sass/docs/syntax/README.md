@@ -1,9 +1,8 @@
 ---
 title: Синтаксис
-index: false
 category:
   - Sass
-  - Syntax
+  - Синтаксис
 ---
 
 ## Синтаксис

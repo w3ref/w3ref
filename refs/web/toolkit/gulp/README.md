@@ -1,9 +1,9 @@
 ---
-title: Gulp Guide
-index: false
+title: Документация Gulp
 icon: creative
 category:
-  - Guide
+  - Gulp
+  - Документация Gulp
 ---
 
-## Gulp Guide
+## Документация Gulp

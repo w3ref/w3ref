@@ -1,6 +1,5 @@
 ---
 title: Инструменты
-index: true
 icon: toolbox
 category:
   - Инструменты

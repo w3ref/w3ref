@@ -1,6 +1,5 @@
 ---
 title: Веб
-index: true
 icon: globe
 category:
   - Веб

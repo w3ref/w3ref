@@ -1,6 +1,5 @@
 ---
 title: Правила стиля
-index: false
 category:
   - Sass
   - Style rules

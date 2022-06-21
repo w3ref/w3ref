@@ -1,6 +1,5 @@
 ---
 title: Less
-index: true
 icon: brands fa-less
 category:
   - Less

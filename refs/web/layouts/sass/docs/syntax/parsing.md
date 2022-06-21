@@ -1,9 +1,9 @@
 ---
 title: Парсинг таблицы стилей
-index: false
 category:
   - Sass
-  - Syntax
+  - Синтаксис
+  - Парсинг
 ---
 
 ## Обзор

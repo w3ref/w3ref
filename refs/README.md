@@ -1,6 +1,5 @@
 ---
 title: Справочники
-index: true
 icon: book
 category:
   - Справочники
