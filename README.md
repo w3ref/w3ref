@@ -2,7 +2,7 @@
 home: true
 icon: home
 title: Главная
-heroImage: /images/logo.png
+heroImage: /images/logo.svg
 heroText: Справочник Веба
 tagline: Вся информация о технологиях в одном месте
 actions:
