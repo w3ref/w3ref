@@ -39,7 +39,7 @@ function calcStatus(inputData) {
   } else if (inputData === 'partial') {
     status = 'частично';
   } else if (inputData !== null) {
-    status = 'с ' + inputData;
+    status = 'начиная с ' + inputData;
   }
 
   return status;
