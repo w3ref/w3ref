@@ -19,4 +19,16 @@ features:
     icon: brands fa-gulp
     details: Gulp guide
     link: /refs/web/toolkit/gulp/
+  - title: Bootstrap
+    icon: brands fa-bootstrap
+    details: Перевод официальной документации Bootstrap
+    link: https://getbootstrap.su/
+  - title: BootstrapVue
+    icon: brands fa-bootstrap
+    details: Перевод официальной документации BootstrapVue
+    link: https://bootstrap-vue.ru/
+  - title: Tailwindcss
+    icon: brands fa-tailwindcss
+    details: Перевод официальной документации Tailwindcss
+    link: https://tailwindcss.ru/
 ---

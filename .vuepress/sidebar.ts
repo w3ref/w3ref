@@ -86,7 +86,16 @@ export default sidebar({
               text: "At-Правила",
               prefix: "at-rules/",
               collapsable: true,
-              children: ["README.md"],
+              children: [
+                "README.md",
+                {
+                  text: "Управление потоком",
+                  prefix: "control/",
+                  collapsable: true,
+                  children: [ "", "if", "each", "for", "while"],
+                },
+                "use",
+              ],
             },
             {
               text: "Значения",
