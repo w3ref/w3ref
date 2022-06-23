@@ -771,3 +771,7 @@ code {
 * `@use` должен стоять в начале вашего файла и не может быть вложен в правила стиля.
 * Каждое правило `@use` может иметь только один URL.
 * `@use` требует заключения URL-адреса в кавычки, даже при использовании [синтаксиса с отступом](../syntax#the-indented-syntax).
+
+<script setup>
+import Status from "@components/refs/web/layouts/sass/Status.vue";
+</script>
