@@ -393,7 +393,3 @@ $accent: #e1d7d2
 ::: tip Забавный факт
 Некоторые функции CSS, такие как `calc()` и `element()`, имеют необычный синтаксис. Sass [специально анализирует эти функции](../syntax/special-functions) как [строки без кавычек](../values/strings#unquoted).
 :::
-
-<script setup>
-import Status from "@components/refs/web/layouts/sass/Status.vue";
-</script>
