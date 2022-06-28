@@ -68,7 +68,7 @@ export default sidebar({
               text: "Правила стиля",
               prefix: "style-rules/",
               collapsable: true,
-              children: ["README.md"],
+              children: ["README.md", "declarations", "parent-selector", "placeholder-selectors"],
             },
             {
               text: "Переменные",
@@ -111,7 +111,18 @@ export default sidebar({
               text: "Значения",
               prefix: "values/",
               collapsable: true,
-              children: ["README.md"],
+              children: [
+                "README.md",
+                "numbers",
+                "strings",
+                "colors",
+                "lists",
+                "maps",
+                "booleans",
+                "null",
+                "calculations",
+                "functions",
+              ],
             },
             {
               text: "Операторы",
