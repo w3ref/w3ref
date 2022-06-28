@@ -128,7 +128,7 @@ export default sidebar({
               text: "Операторы",
               prefix: "operators/",
               collapsable: true,
-              children: ["README.md"],
+              children: ["README.md", "equality", "relational", "numeric", "string", "boolean"],
             },
             {
               text: "Встроенные модули",
