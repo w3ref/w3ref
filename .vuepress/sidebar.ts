@@ -20,7 +20,7 @@ export default sidebar({
     {
       text: "Веб",
       icon: "globe",
-      children: ["layouts/", "toolkit/"],
+      children: ["layouts/", "toolkit/", "frameworks/"],
     },
   ],
   "/refs/web/layouts/": [
@@ -165,6 +165,22 @@ export default sidebar({
       icon: "brands fa-less",
       prefix: "",
       children: [""],
+    },
+  ],
+  "/refs/web/frameworks/": [
+    {
+      text: "Фреймворки",
+      icon: "layer-framework",
+      prefix: "",
+      children: ["js/"],
+    },
+  ],
+  "/refs/web/frameworks/js/": [
+    {
+      text: "Alpine",
+      icon: "brands fa-alpine",
+      prefix: "",
+      children: ["alpinejs/"],
     },
   ],
 });

@@ -34,6 +34,7 @@ export default hopeTheme({
       imageSize: true,
       align: true,
       demo: true,
+      tabs: true,
     },
   },
 });
