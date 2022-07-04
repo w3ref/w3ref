@@ -170,17 +170,24 @@ export default sidebar({
   "/refs/web/frameworks/": [
     {
       text: "Фреймворки",
-      icon: "layer-framework",
+      icon: "frame",
       prefix: "",
       children: ["js/"],
     },
   ],
   "/refs/web/frameworks/js/": [
     {
-      text: "Alpine",
-      icon: "brands fa-alpine",
+      text: "JS-фреймворки",
+      icon: "brands fa-js",
       prefix: "",
       children: ["alpinejs/"],
+    },
+  ],
+  "/refs/web/frameworks/js/alpinejs/": [
+    {
+      text: "AlpineJS",
+      prefix: "",
+      children: "structure",
     },
   ],
 });
