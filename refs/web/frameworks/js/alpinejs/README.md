@@ -3,11 +3,11 @@ title: Alpine.js
 home: true
 icon: brands fa-alpine
 heroImage: /images/refs/web/frameworks/js/alpinejs/alpine_long.svg
-heroText: Simple. Lightweight. Powerful as hell.
-tagline: Your new, lightweight, JavaScript framework.
+heroText: Простой. Легкий. Мощный, как ад.
+tagline: Ваш новый легкий JavaScript-фреймворк.
 
 actions:
-  - text: Start Here 🗂️
+  - text: Начните здесь 🗂️
     link: start-here/
     type: primary
 ---
@@ -16,29 +16,29 @@ actions:
 <script src="//unpkg.com/alpinejs" defer></script>
  
 <div x-data="{ open: false }">
-  <button @click="open = true">Expand</button>
+  <button @click="open = true">Развернуть</button>
 
   <span x-show="open">
-    Content...
+    Контент...
   </span>
 </div>
 ```
 
-Alpine is a rugged, minimal tool for composing behavior directly in your markup. Think of it like jQuery for the modern web. Plop in a script tag and get going.
+Alpine — это надежный минималистичный инструмент для компоновки поведения непосредственно в вашей разметке. Думайте об этом как о jQuery для современной сети. Вставьте тег script и приступайте.
 
-Alpine is a collection of 15 attributes, 6 properties, and 2 methods.
+Alpine — это набор из 15 атрибутов, 6 свойств и 2 методов.
 
-There is no better way to get a feel for what Alpine is and what it can do, than by seeing it for yourself:
+Нет лучшего способа понять, что такое Alpine и на что он способен, чем увидеть это своими глазами:
 
 ::: tabs#settings
 
-@tab 15 Attributes
+@tab 15 Атрибутов
 
-### Attributes
+### Атрибуты
 
 #### x-data
 
-Declare a new Alpine component and its data for a block of HTML
+Объявить новый компонент Alpine и его данные для блока HTML
 
 ```js
 <div x-data="{ open: false }">
@@ -48,7 +48,7 @@ Declare a new Alpine component and its data for a block of HTML
 
 #### x-bind
 
-Dynamically set HTML attributes on an element
+Динамически устанавливать атрибуты HTML для элемента
 
 ```js
 <div x-bind:class="! open ? 'hidden' : ''">
@@ -56,29 +56,23 @@ Dynamically set HTML attributes on an element
 </div>
 ```
 
-#### 
-
-```js
-test
-```
-
 #### x-on
 
-Listen for browser events on an element
+Прослушивание событий браузера для элемента
 
 ```js
 <button x-on:click="open = ! open">
-  Toggle
+  Переключить
 </button>
 ```
 
 #### x-text
 
-Set the text content of an element
+Установить текстовое содержимое элемента
 
 ```js
 <div>
-  Copyright ©
+  Авторские права ©
  
   <span x-text="new Date().getFullYear()"></span>
 </div>
@@ -86,7 +80,7 @@ Set the text content of an element
 
 #### x-html
 
-Set the inner HTML of an element
+Установить внутренний HTML элемента
 
 ```js
 <div x-html="(await axios.get('/some/html/partial')).data">
@@ -96,7 +90,7 @@ Set the inner HTML of an element
 
 #### x-model
 
-Synchronize a piece of data with an input element
+Синхронизируйте часть данных с элементом ввода
 
 ```js
 <div x-show="open">
@@ -106,7 +100,7 @@ Synchronize a piece of data with an input element
 
 #### x-transition
 
-Transition an element in and out using CSS transitions
+Переход элемента внутрь и наружу с помощью переходов CSS
 
 ```js
 <div x-show="open" x-transition>
@@ -116,7 +110,7 @@ Transition an element in and out using CSS transitions
 
 #### x-for
 
-Repeat a block of HTML based on a data set
+Повтор блока HTML на основе набора данных
 
 ```js
 <template x-for="post in posts">
@@ -126,7 +120,7 @@ Repeat a block of HTML based on a data set
 
 #### x-if
 
-Conditionally add/remove a block of HTML from the page entirely.
+Условно добавить/удалить блок HTML со страницы целиком
 
 ```js
 <template x-if="open">
@@ -136,7 +130,7 @@ Conditionally add/remove a block of HTML from the page entirely.
 
 #### x-init
 
-Run code when an element is initialized by Alpine
+Запуск кода, когда элемент инициализируется Alpine
 
 ```js
 <div x-init="date = new Date()"></div>
@@ -144,7 +138,7 @@ Run code when an element is initialized by Alpine
 
 #### x-effect
 
-Execute a script each time one of its dependancies change
+Выполнять скрипт каждый раз, когда меняется одна из его зависимостей
 
 ```js
 <div x-effect="console.log('Count is '+count)"></div>
@@ -152,7 +146,7 @@ Execute a script each time one of its dependancies change
 
 #### x-ref
 
-Reference elements directly by their specified keys using the $refs magic property
+Ссылайтесь на элементы напрямую по их указанным ключам, используя магическое свойство $refs
 
 ```js
 <input type="text" x-ref="content">
@@ -164,7 +158,7 @@ Reference elements directly by their specified keys using the $refs magic proper
 
 #### x-cloak
 
-Hide a block of HTML until after Alpine is finished initializing its contents
+Скрыть блок HTML до тех пор, пока Alpine не завершит инициализацию его содержимого
 
 ```js
 <div x-cloak>
@@ -174,7 +168,7 @@ Hide a block of HTML until after Alpine is finished initializing its contents
 
 #### x-ignore
 
-Prevent a block of HTML from being initialized by Alpine
+Предотвратить инициализацию блока HTML Alpine
 
 ```js
 <div x-ignore>
@@ -182,13 +176,13 @@ Prevent a block of HTML from being initialized by Alpine
 </div>
 ```
 
-@tab 6 Properties
+@tab 6 Свойств
 
-### Properties
+### Свойства
 
 #### $store
 
-Access a global store registered using Alpine.store(...)
+Доступ к глобальному стору, зарегистрированному с помощью Alpine.store(...)
 
 ```js
 <h1 x-text="$store.site.title"></h1>
@@ -196,7 +190,7 @@ Access a global store registered using Alpine.store(...)
 
 #### $el
 
-Reference the current DOM element
+Ссылка на текущий элемент DOM
 
 ```js
 <div x-init="new Pikaday($el)"></div>
@@ -204,7 +198,7 @@ Reference the current DOM element
 
 #### $dispatch
 
-Dispatch a custom browser event from the current element
+Отправка пользовательского события браузера из текущего элемента
 
 ```js
 <div x-on:notify="...">
@@ -214,7 +208,7 @@ Dispatch a custom browser event from the current element
 
 #### $watch
 
-Watch a piece of data and run the provided callback anytime it changes
+Наблюдайте за фрагментом данных и запускайте предоставленный обратный вызов в любое время, когда он изменяется
 
 ```js
 <div x-init="$watch('count', value => {
@@ -224,7 +218,7 @@ Watch a piece of data and run the provided callback anytime it changes
 
 #### $refs
 
-Reference an element by key (specified using x-ref)
+Ссылка на элемент по ключу (указывается с помощью x-ref)
 
 ```js
 <div x-init="$refs.button.remove()">
@@ -234,7 +228,7 @@ Reference an element by key (specified using x-ref)
 
 #### $nextTick
 
-Wait until the next "tick" (browser paint) to run a bit of code
+Дождитесь следующего "тика" (отрисовка браузера), чтобы выполнить часть кода
 
 ```js
 <div
@@ -245,13 +239,13 @@ Wait until the next "tick" (browser paint) to run a bit of code
 >...</div>
 ```
 
-@tab 2 Methods
+@tab 2 Метода
 
-### Methods
+### Методы
 
 #### Alpine.data
 
-Reuse a data object and reference it using `x-data`
+Повторно используйте объект данных и ссылайтесь на него с помощью `x-data`
 
 ```js
 <div x-data="dropdown">
@@ -271,7 +265,7 @@ Alpine.data('dropdown', () => ({
 
 #### Alpine.store
 
-Declare a piece of global, reactive, data that can be accessed from anywhere using `$store`
+Объявить часть глобальных реактивных данных, к которым можно получить доступ из любого места, используя `$store`
 
 ```js
 <button @click="$store.notifications.notify('...')">
