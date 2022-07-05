@@ -29,7 +29,7 @@ Sass имеет встроенную поддержку значений цве�
 @debug hsla(20, 20%, 85%, 0.7); // rgb(225, 215, 210, 0.7)
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @debug #f2ece4  // #f2ece4
@@ -62,7 +62,7 @@ $venus: #998099;
 @debug mix($venus, midnightblue); // #594d85
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 $venus: #998099

@@ -26,7 +26,7 @@ Sass поддерживает стандартный набор математи
 @debug 1in % 9px; // 0.0625in
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @debug 10s + 15s  // 25s
@@ -48,7 +48,7 @@ Sass поддерживает стандартный набор математи
 @debug 4s * 10; // 40s
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @debug 100px + 50  // 150px
@@ -69,7 +69,7 @@ Sass поддерживает стандартный набор математи
 // Error: Incompatible units px and s.
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @debug 100px + 10s
@@ -96,7 +96,7 @@ Sass поддерживает стандартный набор математи
 @debug -(10px - 15px); // 5px
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @debug +(5s + 7s)  // 12s
@@ -136,7 +136,7 @@ $number: 2;
 @debug 1 (-$number) 3; // 1 -2 3
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @debug a-1  // a-1
@@ -195,7 +195,7 @@ $result: 15px / 30px;
 @debug 15px/30px + 1; // 1.5
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @use "sass:list";
@@ -239,7 +239,7 @@ $degrees-per-second: math.div(20deg, 1s);
 @debug math.div(1, $degrees-per-second); // 0.05s/deg
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @debug 4px * 6px  // 24px*px (read "square pixels")
@@ -274,7 +274,7 @@ Sass будет автоматически конвертировать межд
 // Error: Incompatible units s and in.
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 // CSS defines one inch as 96 pixels.
@@ -311,7 +311,7 @@ $transition-speed: math.div(1s, 50px);
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 $transition-speed: math.div(1s, 50px)

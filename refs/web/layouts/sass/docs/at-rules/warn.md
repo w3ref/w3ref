@@ -36,7 +36,7 @@ $known-prefixes: webkit, moz, ms, o;
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 $known-prefixes: webkit, moz, ms, o

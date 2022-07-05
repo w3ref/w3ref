@@ -23,7 +23,7 @@ category:
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 .circle
@@ -68,7 +68,7 @@ category:
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @mixin prefix($property, $value, $prefixes)
@@ -121,7 +121,7 @@ category:
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 .enlarge
@@ -168,7 +168,7 @@ category:
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 .info-page
@@ -210,7 +210,7 @@ $rounded-corners: false;
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 $rounded-corners: false
@@ -271,7 +271,7 @@ $warn: #dfa612;
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 $primary: #81899b
@@ -328,7 +328,7 @@ $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas;
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @use "sass:meta"

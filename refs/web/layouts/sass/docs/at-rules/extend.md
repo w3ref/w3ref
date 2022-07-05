@@ -45,7 +45,7 @@ category:
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 .error
@@ -94,7 +94,7 @@ category:
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 .error:hover
@@ -164,7 +164,7 @@ main.content .info {
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 .content nav.sidebar
@@ -244,7 +244,7 @@ main.content .info, main.content nav.sidebar {
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 .alert:hover, %strong-alert
@@ -333,7 +333,7 @@ LibSass и Ruby Sass в настоящее время позволяют рас�
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 .alert
@@ -381,7 +381,7 @@ aside .notice dd {
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 header .warning li
@@ -458,7 +458,7 @@ header .warning li, header .warning aside .notice dd, aside .notice header .warn
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @media screen and (max-width: 600px)

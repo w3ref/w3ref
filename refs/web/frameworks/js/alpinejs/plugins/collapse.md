@@ -66,7 +66,7 @@ For example:
 </div>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div x-data="{ expanded: false }" class="demo">
     <button @click="expanded = ! expanded">Toggle Content</button>
 
@@ -76,7 +76,7 @@ For example:
         </div>
     </div>
 </div>
-<!-- END_VERBATIM -->
+```
 
 <a name="modifiers"></a>
 ## Modifiers
@@ -96,7 +96,7 @@ You can customize the duration of the collapse/expand transition by appending th
 </div>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div x-data="{ expanded: false }" class="demo">
     <button @click="expanded = ! expanded">Toggle Content</button>
 
@@ -106,7 +106,7 @@ You can customize the duration of the collapse/expand transition by appending th
         </div>
     </div>
 </div>
-<!-- END_VERBATIM -->
+```
 
 <a name="dot-min"></a>
 ### .min
@@ -125,7 +125,7 @@ Sometimes, it's helpful to "cut-off" an element rather than fully hide it. By us
 </div>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div x-data="{ expanded: false }" class="demo">
     <button @click="expanded = ! expanded">Toggle Content</button>
 
@@ -135,4 +135,4 @@ Sometimes, it's helpful to "cut-off" an element rather than fully hide it. By us
         </div>
     </div>
 </div>
-<!-- END_VERBATIM -->
+```

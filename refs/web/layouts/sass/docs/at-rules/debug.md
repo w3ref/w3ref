@@ -24,7 +24,7 @@ category:
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @mixin inset-divider-offset($offset, $padding)

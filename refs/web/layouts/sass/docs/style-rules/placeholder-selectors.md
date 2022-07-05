@@ -24,7 +24,7 @@ category:
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 .alert:hover, %strong-alert
@@ -77,7 +77,7 @@ category:
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 %toolbelt

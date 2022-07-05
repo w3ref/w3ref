@@ -32,7 +32,7 @@ category:
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @function pow($base, $exponent)
@@ -108,7 +108,7 @@ $primary-color: #036;
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @function invert($color, $amount: 100%)
@@ -158,7 +158,7 @@ $primary-color: #036;
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 $primary-color: #036
@@ -206,7 +206,7 @@ $primary-color: #036
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @function sum($numbers...)
@@ -263,7 +263,7 @@ $widths: 50px, 30px, 100px;
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 $widths: 50px, 30px, 100px
@@ -297,7 +297,7 @@ $widths: 50px, 30px, 100px
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @function fg($args...)
@@ -335,7 +335,7 @@ At-правило `@return` указывает значение, использ�
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @use "sass:string"
@@ -374,7 +374,7 @@ $accent: #e1d7d2;
 @debug radial-gradient($primary, $accent); // radial-gradient(#f2ece4, #e1d7d2)
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @debug var(--main-bg-color)  // var(--main-bg-color)

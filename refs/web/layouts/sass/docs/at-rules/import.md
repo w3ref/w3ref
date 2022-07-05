@@ -61,7 +61,7 @@ ul, ol {
 @import 'foundation/code', 'foundation/lists';
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 // foundation/_code.sass
@@ -176,7 +176,7 @@ ul, ol {
 @import 'foundation';
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 // foundation/_code.sass
@@ -262,7 +262,7 @@ pre, code {
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 // _theme.sass
@@ -323,7 +323,7 @@ ul li {
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 // _theme.sass
@@ -392,7 +392,7 @@ code {
 @import 'code';
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 // code.css
@@ -447,7 +447,7 @@ code {
 @import "landscape" screen and (orientation: landscape);
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @import "theme.css"
@@ -483,7 +483,7 @@ code {
 @include google-font("Droid Sans");
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @mixin google-font($family)
@@ -549,7 +549,7 @@ API, который имеет смысл для `@use`, может не име�
 @forward "reset" as reset-*;
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 // _reset.sass
@@ -595,7 +595,7 @@ $lib-color: green;
 @import "library";
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 $color: blue !default

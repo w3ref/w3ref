@@ -14,7 +14,7 @@ title: refs
 <span x-ref="text">Hello 👋</span>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="demo">
     <div x-data>
         <button @click="$refs.text.remove()">Remove Text</button>
@@ -22,6 +22,6 @@ title: refs
         <div class="pt-4" x-ref="text">Hello 👋</div>
     </div>
 </div>
-<!-- END_VERBATIM -->
+```
 
 Now, when the `<button>` is pressed, the `<span>` will be removed.

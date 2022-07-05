@@ -33,7 +33,7 @@ Sass предоставляет множество встроенных моду
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @use "sass:color"
@@ -106,7 +106,7 @@ LibSass и более старые версии Ruby Sass не поддержи�
 @debug hsla(var(--peach), 20%); // hsla(var(--peach), 20%)
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @debug hsl(210deg 100% 20% / var(--opacity))  // hsl(210deg 100% 20% / var(--opacity))
@@ -132,7 +132,7 @@ LibSass и более старые версии Ruby Sass не поддержи�
 @debug hsla(34, 35%, 92%, 0.2); // rgba(242, 236, 228, 0.2)
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @debug hsl(210deg 100% 20%) // #036
@@ -161,7 +161,7 @@ if($condition, $if-true, $if-false)
 @debug if(variable-defined($var), $var, null); // null
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @debug if(true, 10px, 15px)  // 10px
@@ -212,7 +212,7 @@ LibSass и более старые версии Ruby Sass не поддержи�
 @debug rgba(var(--peach), 0.2); // rgba(var(--peach), 0.2)
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @debug rgb(0 51 102 / var(--opacity))  // rgb(0 51 102 / var(--opacity))
@@ -238,7 +238,7 @@ LibSass и более старые версии Ruby Sass не поддержи�
 @debug rgba(95%, 92.5%, 89.5%, 0.2); // rgba(242, 236, 228, 0.2)
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @debug rgb(0 51 102)  // #036
@@ -260,7 +260,7 @@ LibSass и более старые версии Ruby Sass не поддержи�
 @debug rgba(rgba(0, 51, 102, 0.5), 1); // #003366
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @debug rgb(#f2ece4, 50%)  // rgba(242, 236, 228, 0.5) 

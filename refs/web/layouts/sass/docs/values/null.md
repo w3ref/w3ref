@@ -23,7 +23,7 @@ category:
 @debug &; // null
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 
@@ -45,7 +45,7 @@ h3 {
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 $fonts: ("serif": "Helvetica Neue", "monospace": "Consolas")
@@ -85,7 +85,7 @@ h3 {
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 $fonts: ("serif": "Helvetica Neue", "monospace": "Consolas")
@@ -135,7 +135,7 @@ h3 {
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @mixin app-background($color)

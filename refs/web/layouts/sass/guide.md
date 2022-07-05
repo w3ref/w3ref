@@ -54,7 +54,7 @@ body {
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 $font-stack: Helvetica, sans-serif
@@ -112,7 +112,7 @@ nav {
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 nav
@@ -193,7 +193,7 @@ body {
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 // _base.sass
@@ -259,7 +259,7 @@ body {
 
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @mixin theme($theme: DarkGray)
@@ -349,7 +349,7 @@ body {
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 /* This CSS will print because %message-shared is extended. */
@@ -454,7 +454,7 @@ aside[role="complementary"] {
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @use "sass:math"

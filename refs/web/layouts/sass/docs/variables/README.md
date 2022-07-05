@@ -24,7 +24,7 @@ $border-dark: rgba($base-color, 0.88);
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 $base-color: #c6538c
@@ -71,7 +71,7 @@ $variable: value 2;
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 $variable: value 1
@@ -146,7 +146,7 @@ code {
 );
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 // _library.sass
@@ -205,7 +205,7 @@ code {
 math.$pi: 0;
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @use "sass:math" as math
@@ -241,7 +241,7 @@ $global-variable: global value;
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 $global-variable: global value
@@ -304,7 +304,7 @@ $variable: global value;
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 $variable: global value
@@ -355,7 +355,7 @@ $variable: first global value;
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 $variable: first global value
@@ -420,7 +420,7 @@ $accent-color: #6a1b9a !default;
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 $dark-theme: true !default
@@ -490,7 +490,7 @@ $theme-colors: (
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @use "sass:map"

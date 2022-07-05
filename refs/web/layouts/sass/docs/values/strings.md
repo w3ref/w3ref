@@ -24,7 +24,7 @@ category:
 @debug string.quote(bold); // "bold"
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @use "sass:string"
@@ -56,7 +56,7 @@ category:
 @debug "Nat + Liz \1F46D"; // "Nat + Liz 👭"
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @debug "\""  // '"'
@@ -78,7 +78,7 @@ category:
 
 * `\`, который может быть экранирован как `\\`;
 * `'` или `"`, в зависимости от того, что было использовано для определения этой строки, которая может быть экранирована как `\'` или `\"`;
-* символы новой строки, которые могут быть экранированы как `\a ` (включая конечный пробел).
+* символы новой строки, которые могут быть экранированы как `\a` (включая конечный пробел).
 
 Строки в кавычках гарантированно будут скомпилированы в строки CSS, которые имеют то же содержимое, что и исходные строки Sass. Точный формат может варьироваться в зависимости от реализации или конфигурации - строка, содержащая двойные кавычки, может быть скомпилирована в `"\""` или `'"'`, а символ, отличный от [ASCII](https://en.wikipedia.org/wiki/ASCII), может быть или не быть сбежал. Но это должно быть проанализировано одинаково в любой соответствующей стандартам реализации CSS, включая все браузеры.
 
@@ -96,7 +96,7 @@ $roboto-variant: "Mono";
 @debug "Roboto #{$roboto-variant}"; // "Roboto Mono"
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @debug "Helvetica Neue"  // "Helvetica Neue"
@@ -122,6 +122,7 @@ $roboto-variant: "Mono"
   <object type="image/svg+xml" data="/images/refs/web/layouts/sass/illustrations/identifier-diagram.svg"></object>
   <figcaption class="copyright">Railroad diagram copyright © 2018 W3C<sup>®</sup> (MIT, ERCIM, Keio, Beihang). W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document">permissive document license</a> rules apply.
 </figcaption>
+</figure>
 
 ::: code-tabs#styles
 
@@ -136,7 +137,7 @@ $prefix: ms;
 @debug -#{$prefix}-flex; // -ms-flex
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @debug bold  // bold
@@ -186,7 +187,7 @@ LibSass, Ruby Sass и более старые версии Dart Sass не нор
 @debug string.length(\7Fx); // 5
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @use "sass:string"
@@ -215,7 +216,7 @@ LibSass, Ruby Sass и более старые версии Dart Sass не нор
 @debug string.slice("Roboto Mono", -4); // "Mono"
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @use "sass:string"

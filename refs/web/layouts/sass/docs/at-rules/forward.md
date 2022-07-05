@@ -39,7 +39,7 @@ li {
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 // src/_list.sass
@@ -110,7 +110,7 @@ li {
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 // src/_list.sass
@@ -189,7 +189,7 @@ $horizontal-list-gap: 2em;
 @forward "src/list" hide list-reset, $horizontal-list-gap;
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 // src/_list.sass
@@ -248,7 +248,7 @@ code {
 @use 'opinionated' with ($black: #333);
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 // _library.sass

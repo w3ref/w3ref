@@ -30,7 +30,7 @@ sup {
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @use "sass:math"

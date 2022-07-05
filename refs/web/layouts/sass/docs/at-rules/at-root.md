@@ -35,7 +35,7 @@ category:
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @use "sass:selector"
@@ -109,7 +109,7 @@ category:
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @media print

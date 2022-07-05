@@ -22,7 +22,7 @@ category:
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 .button
@@ -72,7 +72,7 @@ nav {
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 nav
@@ -136,7 +136,7 @@ nav a {
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 .alert, .warning
@@ -189,7 +189,7 @@ p {
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 ul >
@@ -261,7 +261,7 @@ p ~ span {
 @include define-emoji("women-holding-hands", "👭");
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @mixin define-emoji($name, $glyph)

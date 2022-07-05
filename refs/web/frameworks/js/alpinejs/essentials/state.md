@@ -22,7 +22,7 @@ Here's a basic example:
 
 Now any other Alpine syntax on or within this element will be able to access `open`. And like you'd guess, when `open` changes for any reason, everything that depends on it will react automatically.
 
-[→ Read more about `x-data`](/directives/data)
+[→ Read more about `x-data`](./directives/data)
 
 <a name="nesting-data"></a>
 ### Nesting data
@@ -95,7 +95,7 @@ Now that you've registered the "dropdown" data, you can use it inside your marku
 </div>
 ```
 
-[→ Read more about using `Alpine.data()`](/globals/alpine-data)
+[→ Read more about using `Alpine.data()`](./globals/alpine-data)
 
 <a name="global-state"></a>
 ## Global state
@@ -130,4 +130,4 @@ Now we can access or modify its data from anywhere on our page:
 </div>
 ```
 
-[→ Read more about `Alpine.store()`](/globals/alpine-store)
+[→ Read more about `Alpine.store()`](./globals/alpine-store)

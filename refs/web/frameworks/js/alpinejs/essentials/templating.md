@@ -20,11 +20,11 @@ Alpine makes it easy to control the text content of an element with the `x-text`
 </div>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div x-data="{ title: 'Start Here' }" class="demo">
     <strong x-text="title"></strong>
 </div>
-<!-- END_VERBATIM -->
+```
 
 Now, Alpine will set the text content of the `<h1>` with the value of `title` ("Start Here"). When `title` changes, so will the contents of `<h1>`.
 
@@ -34,15 +34,15 @@ Like all directives in Alpine, you can use any JavaScript expression you like. F
 <span x-text="1 + 2"></span>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="demo" x-data>
     <span x-text="1 + 2"></span>
 </div>
-<!-- END_VERBATIM -->
+```
 
 The `<span>` will now contain the sum of "1" and "2".
 
-[→ Read more about `x-text`](/directives/text)
+[→ Read more about `x-text`](./directives/text)
 
 <a name="toggling-elements"></a>
 ## Toggling elements
@@ -66,7 +66,7 @@ Here's a simple toggle component using `x-show`.
 </div>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div x-data="{ open: false }" class="demo">
     <button @click="open = ! open" :aria-pressed="open">Expand</button>
 
@@ -74,13 +74,13 @@ Here's a simple toggle component using `x-show`.
         Content...
     </div>
 </div>
-<!-- END_VERBATIM -->
+```
 
 Now the entire `<div>` containing the contents will be shown and hidden based on the value of `open`.
 
 Under the hood, Alpine adds the CSS property `display: none;` to the element when it should be hidden.
 
-[→ Read more about `x-show`](/directives/show)
+[→ Read more about `x-show`](./directives/show)
 
 This works well for most cases, but sometimes you may want to completely add and remove the element from the DOM entirely. This is what `x-if` is for.
 
@@ -101,7 +101,7 @@ Here is the same toggle from before, but this time using `x-if` instead of `x-sh
 </div>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div x-data="{ open: false }" class="demo">
     <button @click="open = ! open" :aria-pressed="open">Expand</button>
 
@@ -111,13 +111,13 @@ Here is the same toggle from before, but this time using `x-if` instead of `x-sh
         </div>
     </template>
 </div>
-<!-- END_VERBATIM -->
+```
 
 Notice that `x-if` must be declared on a `<template>` tag. This is so that Alpine can leverage the existing browser behavior of the `<template>` element and use it as the source of the target `<div>` to be added and removed from the page.
 
 When `open` is true, Alpine will append the `<div>` to the `<template>` tag, and remove it when `open` is false.
 
-[→ Read more about `x-if`](/directives/if)
+[→ Read more about `x-if`](./directives/if)
 
 <a name="toggling-with-transitions"></a>
 ## Toggling with transitions
@@ -138,7 +138,7 @@ Here is, again, the simple toggle example, but this time with transitions applie
 </div>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div x-data="{ open: false }" class="demo">
     <button @click="open = ! open">Expands</button>
 
@@ -148,7 +148,7 @@ Here is, again, the simple toggle example, but this time with transitions applie
         </div>
     </div>
 </div>
-<!-- END_VERBATIM -->
+```
 
 Let's zoom in on the portion of the template dealing with transitions:
 
@@ -174,7 +174,7 @@ Let's say you wanted to make the duration of the transition longer, you can manu
 <div x-show="open" x-transition.duration.500ms>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div x-data="{ open: false }" class="demo">
     <button @click="open = ! open">Expands</button>
 
@@ -184,7 +184,7 @@ Let's say you wanted to make the duration of the transition longer, you can manu
         </div>
     </div>
 </div>
-<!-- END_VERBATIM -->
+```
 
 Now the transition will last 500 milliseconds.
 
@@ -198,7 +198,7 @@ If you want to specify different values for in and out transitions, you can use 
 >
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div x-data="{ open: false }" class="demo">
     <button @click="open = ! open">Expands</button>
 
@@ -208,7 +208,7 @@ If you want to specify different values for in and out transitions, you can use 
         </div>
     </div>
 </div>
-<!-- END_VERBATIM -->
+```
 
 Additionally, you can add either `.opacity` or `.scale` to only transition that property. For example:
 
@@ -216,7 +216,7 @@ Additionally, you can add either `.opacity` or `.scale` to only transition that 
 <div x-show="open" x-transition.opacity>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div x-data="{ open: false }" class="demo">
     <button @click="open = ! open">Expands</button>
 
@@ -226,9 +226,9 @@ Additionally, you can add either `.opacity` or `.scale` to only transition that 
         </div>
     </div>
 </div>
-<!-- END_VERBATIM -->
+```
 
-[→ Read more about transition helpers](/directives/transition#the-transition-helper)
+[→ Read more about transition helpers](./directives/transition#the-transition-helper)
 
 <a name="transition-classes"></a>
 ### Transition classes
@@ -247,7 +247,7 @@ If you need more fine-grained control over the transitions in your application, 
 >...</div>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div x-data="{ open: false }" class="demo">
     <button @click="open = ! open">Expands</button>
 
@@ -266,9 +266,9 @@ If you need more fine-grained control over the transitions in your application, 
         </div>
     </div>
 </div>
-<!-- END_VERBATIM -->
+```
 
-[→ Read more about transition classes](/directives/transition#applying-css-classes)
+[→ Read more about transition classes](./directives/transition#applying-css-classes)
 
 <a name="binding-attributes"></a>
 ## Binding attributes
@@ -287,7 +287,7 @@ Here is an example of a dynamically bound `class` attribute:
 </button>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="demo">
     <button
         x-data="{ red: false }"
@@ -297,7 +297,7 @@ Here is an example of a dynamically bound `class` attribute:
         Toggle Red
     </button>
 </div>
-<!-- END_VERBATIM -->
+```
 
 
 As a shortcut, you can leave out the `x-bind` and use the shorthand `:` syntax directly:
@@ -329,19 +329,19 @@ Alpine allows for iterating parts of your template based on JavaScript data usin
 </div>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div x-data="{ statuses: ['open', 'closed', 'archived'] }" class="demo">
     <template x-for="status in statuses">
         <div x-text="status"></div>
     </template>
 </div>
-<!-- END_VERBATIM -->
+```
 
 Similar to `x-if`, `x-for` must be applied to a `<template>` tag. Internally, Alpine will append the contents of `<template>` tag for every iteration in the loop.
 
 As you can see the new `status` variable is available in the scope of the iterated templates.
 
-[→ Read more about `x-for`](/directives/for)
+[→ Read more about `x-for`](./directives/for)
 
 <a name="inner-html"></a>
 ## Inner HTML
@@ -354,15 +354,15 @@ Alpine makes it easy to control the HTML content of an element with the `x-html`
 </div>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div x-data="{ title: '<h1>Start Here</h1>' }" class="demo">
     <div x-html="title"></div>
 </div>
-<!-- END_VERBATIM -->
+```
 
 Now, Alpine will set the text content of the `<div>` with the element `<h1>Start Here</h1>`. When `title` changes, so will the contents of `<h1>`.
 
 > ⚠️ Only use on trusted content and never on user-provided content. ⚠️
 > Dynamically rendering HTML from third parties can easily lead to XSS vulnerabilities.
 
-[→ Read more about `x-html`](/directives/html)
+[→ Read more about `x-html`](./directives/html)

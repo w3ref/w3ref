@@ -27,7 +27,7 @@ The simplest way to achieve a transition using Alpine is by adding `x-transition
 </div>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="demo">
     <div x-data="{ open: false }">
         <button @click="open = ! open">Toggle</button>
@@ -37,7 +37,7 @@ The simplest way to achieve a transition using Alpine is by adding `x-transition
         </span>
     </div>
 </div>
-<!-- END_VERBATIM -->
+```
 
 As you can see, by default, `x-transition` applies pleasant transition defaults to fade and scale the revealing element.
 
@@ -149,7 +149,7 @@ For direct control over exactly what goes into your transitions, you can apply C
 </div>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="demo">
     <div x-data="{ open: false }">
     <button @click="open = ! open">Toggle</button>
@@ -165,7 +165,7 @@ For direct control over exactly what goes into your transitions, you can apply C
     >Hello 👋</div>
 </div>
 </div>
-<!-- END_VERBATIM -->
+```
 
 | Directive      | Description |
 | ---            | --- |

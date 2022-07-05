@@ -184,7 +184,7 @@ You may also notice that `Alpine.effect()` exists and wonder why we're not using
 
 For example, if for some reason the element with `x-log` on it got removed from the page, by using `effect()` instead of `Alpine.effect()` when the `message` property is changed, the value will no longer be logged to the console.
 
-[→ Read more about reactivity in Alpine](/advanced/reactivity)
+[→ Read more about reactivity in Alpine](./advanced/reactivity)
 
 ```js
 getThingToLog(thingToLog => {
@@ -198,7 +198,7 @@ You might expect `getThingToCall()` to return the result right away, but instead
 
 The reason for this is to support async expressions like `await getMessage()`. By passing in a "receiver" callback instead of getting the result immediately, you are allowing your directive to work with async expressions as well.
 
-[→ Read more about async in Alpine](/advanced/async)
+[→ Read more about async in Alpine](./advanced/async)
 
 <a name="cleaning-up"></a>
 ### Cleaning Up

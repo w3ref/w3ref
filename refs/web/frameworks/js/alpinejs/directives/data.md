@@ -167,4 +167,4 @@ Here's a quick example:
 </script>
 ```
 
-[→ Read more about `Alpine.data(...)`](/globals/alpine-data)
+[→ Read more about `Alpine.data(...)`](./globals/alpine-data)

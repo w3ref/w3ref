@@ -42,7 +42,7 @@ Alpine allows you to execute code when a piece of data (state) changes. It offer
 
 As you can see above, `$watch` allows you to hook into data changes using a dot-notation key. When that piece of data changes, Alpine will call the passed callback and pass it the new value. along with the old value before the change.
 
-[→ Read more about $watch](/magics/watch)
+[→ Read more about $watch](./magics/watch)
 
 <a name="x-effect"></a>
 ### `x-effect`
@@ -64,7 +64,7 @@ The two main behavioral differences with this approach are:
 1. The provided code will be run right away AND when data changes (`$watch` is "lazy" -- won't run until the first data change)
 2. No knowledge of the previous value. (The callback provided to `$watch` receives both the new value AND the old one)
 
-[→ Read more about x-effect](/directives/effect)
+[→ Read more about x-effect](./directives/effect)
 
 <a name="alpine-initialization"></a>
 ## Alpine initialization

@@ -43,7 +43,7 @@ nav ul {
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @mixin reset-list
@@ -123,7 +123,7 @@ nav ul li {
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @mixin rtl($property, $ltr-value, $rtl-value)
@@ -187,7 +187,7 @@ nav ul li {
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @mixin replace-text($image, $x: 50%, $y: 50%)
@@ -256,7 +256,7 @@ nav ul li {
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @mixin square($size, $radius: 0)
@@ -325,7 +325,7 @@ nav ul li {
 
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @mixin order($height, $selectors...)
@@ -400,7 +400,7 @@ input.zip {
 )
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @use "sass:meta"
@@ -466,7 +466,7 @@ $form-selectors: "input.name", "input.address", "input.zip" !default;
 @include order(150px, $form-selectors...);
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 $form-selectors: "input.name", "input.address", "input.zip" !default
@@ -490,7 +490,7 @@ $form-selectors: "input.name", "input.address", "input.zip" !default
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @mixin btn($args...)
@@ -526,7 +526,7 @@ $form-selectors: "input.name", "input.address", "input.zip" !default
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @mixin hover
@@ -606,7 +606,7 @@ $form-selectors: "input.name", "input.address", "input.zip" !default
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @mixin media($types...)
@@ -656,7 +656,7 @@ $form-selectors: "input.name", "input.address", "input.zip" !default
 
 ::: code-tabs#styles
 
-@tab Sass
+@tab SASS
 
 ```sass
 =reset-list

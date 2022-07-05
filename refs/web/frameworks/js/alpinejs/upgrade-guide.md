@@ -7,7 +7,7 @@ title: Upgrade From V2
 
 Below is an exhaustive guide on the breaking changes in Alpine V3, but if you'd prefer something more lively, you can review all the changes as well as new features in V3 by watching the Alpine Day 2021 "Future of Alpine" keynote:
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="relative w-full" style="padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
     <iframe
             class="absolute top-0 left-0 right-0 bottom-0 w-full h-full"
@@ -16,7 +16,7 @@ Below is an exhaustive guide on the breaking changes in Alpine V3, but if you'd 
             allowfullscreen
     ></iframe>
 </div>
-<!-- END_VERBATIM -->
+```
 
 Upgrading from Alpine V2 to V3 should be fairly painless. In many cases, NOTHING has to be done to your codebase to use V3. Below is an exhaustive list of breaking changes and deprecations in descending order of how likely users are to be affected by them:
 
@@ -57,8 +57,8 @@ Upgrading from Alpine V2 to V3 should be fairly painless. In many cases, NOTHING
 
 For a smoother upgrade experience, you can replace all instances of `$el` with a custom magic called `$root`.
 
-[→ Read more about $el in V3](/magics/el)  
-[→ Read more about $root in V3](/magics/root)
+[→ Read more about $el in V3](./magics/el)  
+[→ Read more about $root in V3](./magics/root)
 
 <a name="auto-init"></a>
 ### Automatically evaluate `init()` functions defined on data object
@@ -85,7 +85,7 @@ In V3, Alpine will automatically call `init()` methods on data objects.
 </script>
 ```
 
-[→ Read more about auto-evaluating init functions](/globals/alpine-data#init-functions)
+[→ Read more about auto-evaluating init functions](./globals/alpine-data#init-functions)
 
 <a name="need-to-call-alpine-start"></a>
 ### Need to call Alpine.start() after import
@@ -104,7 +104,7 @@ window.Alpine = Alpine
 Alpine.start()
 ```
 
-[→ Read more about initializing Alpine V3](/essentials/installation#as-a-module)
+[→ Read more about initializing Alpine V3](./essentials/installation#as-a-module)
 
 <a name="removed-show-dot-transition"></a>
 ### `x-show.transition` is now `x-transition`
@@ -132,7 +132,7 @@ All of the conveniences provided by `x-show.transition...` helpers are still ava
 ></div>
 ```
 
-[→ Read more about x-transition](/directives/transition)
+[→ Read more about x-transition](./directives/transition)
 
 <a name="x-if-no-transitions"></a>
 ### `x-if` no longer supports `x-transition`
@@ -153,7 +153,7 @@ Because the transition system is complex, it makes more sense from a maintenance
 <div x-show="open" x-transition>...</div>
 ```
 
-[→ Read more about x-if](/directives/if)
+[→ Read more about x-if](./directives/if)
 
 <a name="x-data-scope"></a>
 ### `x-data` cascading scope
@@ -176,7 +176,7 @@ Scope defined in `x-data` is now available to all children unless overwritten by
 </div>
 ```
 
-[→ Read more about x-data scoping](/directives/data#scope)
+[→ Read more about x-data scoping](./directives/data#scope)
 
 <a name="x-init-no-callback"></a>
 ### `x-init` no longer accepts a callback return
@@ -191,7 +191,7 @@ Before V3, if `x-init` received a return value that is `typeof` "function", it w
 <div x-data x-init="$nextTick(() => { ... })">...</div>
 ```
 
-[→ Read more about $nextTick](/magics/next-tick)
+[→ Read more about $nextTick](./magics/next-tick)
 
 <a name="no-false-return-from-event-handlers"></a>
 ### Returning `false` from event handlers no longer implicitly "preventDefault"s
@@ -210,7 +210,7 @@ Alpine V2 observes a return value of `false` as a desire to run `preventDefault`
 </div>
 ```
 
-[→ Read more about x-on](/directives/on)
+[→ Read more about x-on](./directives/on)
 
 <a name="x-spread-now-x-bind"></a>
 ### `x-spread` is now `x-bind`
@@ -251,7 +251,7 @@ One of Alpine's stories for re-using functionality is abstracting Alpine directi
 </script>
 ```
 
-[→ Read more about binding directives using x-bind](/directives/bind#bind-directives)
+[→ Read more about binding directives using x-bind](./directives/bind#bind-directives)
 
 <a name="use-global-events-now"></a>
 ### Use global lifecycle events instead of `Alpine.deferLoadingAlpine()`
@@ -280,7 +280,7 @@ One of Alpine's stories for re-using functionality is abstracting Alpine directi
 </script>
 ```
 
-[→ Read more about Alpine lifecycle events](/essentials/lifecycle#alpine-initialization)
+[→ Read more about Alpine lifecycle events](./essentials/lifecycle#alpine-initialization)
 
 
 <a name="x-ref-no-more-dynamic"></a>

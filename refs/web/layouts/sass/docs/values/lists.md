@@ -48,7 +48,7 @@ Sass предоставляет несколько [функций](../modules/l
 @debug list.nth([line1, line2, line3], -1); // line3
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @debug list.nth(10px 12px 16px, 2)  // 12px
@@ -86,7 +86,7 @@ $sizes: 40px, 50px, 80px;
 
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 $sizes: 40px, 50px, 80px
@@ -145,7 +145,7 @@ $sizes: 40px, 50px, 80px
 @debug append([col1-line1], col1-line2); // [col1-line1, col1-line2]
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @debug append(10px 12px 16px, 25px)  // 10px 12px 16px 25px
@@ -169,7 +169,7 @@ $sizes: 40px, 50px, 80px
 @debug list.index(1px solid red, dashed); // null
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @debug list.index(1px solid red, 1px)  // 1
@@ -199,7 +199,7 @@ $valid-sides: top, bottom, left, right;
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @use "sass:list"
@@ -244,7 +244,7 @@ $prefixes-by-browser: ("firefox": moz, "safari": webkit, "ie": ms);
 @debug prefixes-for-browsers("firefox" "ie"); // moz ms
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @use "sass:list"
@@ -294,7 +294,7 @@ $prefixes-by-browser: ("firefox": moz, "safari": webkit, "ie": ms)
 )
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @use "sass:meta"

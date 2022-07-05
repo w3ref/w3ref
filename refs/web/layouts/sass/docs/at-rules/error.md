@@ -31,7 +31,7 @@ Error: "Property top must be either left or right."
 ```
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @mixin reflexive-position($property, $value)

@@ -62,14 +62,14 @@ You can wrap any value inside `x-data` with `$persist` like below to persist its
 </div>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="demo">
     <div x-data="{ count: $persist(0) }">
         <button x-on:click="count++">Increment</button>
         <span x-text="count"></span>
     </div>
 </div>
-<!-- END_VERBATIM -->
+```
 
 In the above example, because we wrapped `0` in `$persist()`, Alpine will now intercept changes made to `count` and persist them across page loads.
 
@@ -84,7 +84,7 @@ Now when a page is reloaded, Alpine will check localStorage (using the name of t
 
 You can observe this behavior by opening your browser devtool's localStorage viewer:
 
-<a href="https://developer.chrome.com/docs/devtools/storage/localstorage/"><img src="/img/persist_devtools.png" alt="Chrome devtools showing the localStorage view with count set to 0"></a>
+<a href="https://developer.chrome.com/docs/devtools/storage/localstorage/"><img src="/images/refs/web/frameworks/js/alpinejs/plugins/persist/persist_devtools.png" alt="Chrome devtools showing the localStorage view with count set to 0"></a>
 
 You'll observe that by simply visiting this page, Alpine already set the value of "count" in localStorage. You'll also notice it prefixes the property name "count" with "_x_" as a way of namespacing these values so Alpine doesn't conflict with other tools using localStorage.
 
@@ -98,14 +98,14 @@ Now change the "count" in the following example and observe the changes made by 
 </div>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="demo">
     <div x-data="{ count: $persist(0) }">
         <button x-on:click="count++">Increment</button>
         <span x-text="count"></span>
     </div>
 </div>
-<!-- END_VERBATIM -->
+```
 
 > `$persist` works with primitive values as well as with arrays and objects.
 However, it is worth noting that localStorage must be cleared when the type of the variable changes.<br>
@@ -135,7 +135,7 @@ Now Alpine will store and retrieve the above "count" value using the key "other-
 
 Here's a view of Chrome Devtools to see for yourself:
 
-<img src="/img/persist_custom_key_devtools.png" alt="Chrome devtools showing the localStorage view with count set to 0">
+<img src="/images/refs/web/frameworks/js/alpinejs/plugins/persist/persist_custom_key_devtools.png" alt="Chrome devtools showing the localStorage view with count set to 0">
 
 <a name="custom-storage"></a>
 ## Using a custom storage

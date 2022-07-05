@@ -88,13 +88,13 @@ button.addEventListener('click', () => {
 })
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div x-data="{ count: 1 }" class="demo">
     <button @click="count++">Increment</button>
 
     <div>Count: <span x-text="count"></span></div>
 </div>
-<!-- END_VERBATIM -->
+```
 
 As you can see, you can make any data reactive, and you can also wrap any functionality in `Alpine.effect`.
 

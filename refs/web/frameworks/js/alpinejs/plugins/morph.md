@@ -13,10 +13,10 @@ This is useful for updating HTML from a server request without loosing Alpine's 
 
 The best way to understand its purpose is with the following interactive visualization. Give it a try!
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div x-data="{ slide: 1 }" class="border rounded">
     <div>
-        <img :src="'/img/morphs/morph'+slide+'.png'">
+        <img :src="'/images/refs/web/frameworks/js/alpinejs/plugins/morphs/morph'+slide+'.png'">
     </div>
 
     <div class="flex w-full justify-between" style="padding-bottom: 1rem">
@@ -28,7 +28,7 @@ The best way to understand its purpose is with the following interactive visuali
         </div>
     </div>
 </div>
-<!-- END_VERBATIM -->
+```
 
 <a name="installation"></a>
 ## Installation
@@ -106,7 +106,7 @@ Here's an example of using `Alpine.morph()` to update an Alpine component with n
 </script>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="demo">
     <div x-data="{ message: 'Change me, then press the button!' }" id="morph-demo-1" class="space-y-2">
         <input type="text" x-model="message" class="w-full">
@@ -130,7 +130,7 @@ Here's an example of using `Alpine.morph()` to update an Alpine component with n
         `)
     })
 </script>
-<!-- END_VERBATIM -->
+```
 
 <a name="lifecycle-hooks"></a>
 ### Lifecycle Hooks

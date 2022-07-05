@@ -14,8 +14,8 @@ title: root
 </div>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div x-data data-message="Hello World!" class="demo">
     <button @click="alert($root.dataset.message)">Say Hi</button>
 </div>
-<!-- END_VERBATIM -->
+```

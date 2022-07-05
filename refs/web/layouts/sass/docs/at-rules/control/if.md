@@ -34,7 +34,7 @@ category:
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @mixin avatar($size, $circle: false)
@@ -108,7 +108,7 @@ $dark-text: #d2e1dd;
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 $light-background: #f2ece4
@@ -208,7 +208,7 @@ body.dark .banner {
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @use "sass:math"

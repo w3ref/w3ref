@@ -5,7 +5,7 @@ title: bind()
 
 # Alpine.bind
 
-`Alpine.bind(...)` provides a way to re-use [`x-bind`](/directives/bind#bind-directives) objects within your application.
+`Alpine.bind(...)` provides a way to re-use [`x-bind`](./directives/bind#bind-directives) objects within your application.
 
 Here's a simple example. Rather than binding attributes manually with Alpine:
 

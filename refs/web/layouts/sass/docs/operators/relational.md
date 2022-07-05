@@ -26,7 +26,7 @@ category:
 @debug 1000ms <= 1s; // true
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @debug 100 > 50  // true
@@ -48,7 +48,7 @@ category:
 @debug 10px < 17; // true
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @debug 100 > 50px  // true
@@ -69,7 +69,7 @@ category:
 // Error: Incompatible units px and s.
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @debug 100px > 10s

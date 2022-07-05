@@ -40,7 +40,7 @@ $font-weights: ("regular": 400, "medium": 500, "bold": 700);
 @debug map.get($font-weights, "extra-bold"); // null
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 $font-weights: ("regular": 400, "medium": 500, "bold": 700)
@@ -80,7 +80,7 @@ $icons: ("eye": "\f112", "start": "\f12e", "stop": "\f12f");
 
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 $icons: ("eye": "\f112", "start": "\f12e", "stop": "\f12f")
@@ -147,7 +147,7 @@ $font-weights: ("regular": 400, "medium": 500, "bold": 700);
 // ("regular": 400, "medium": 500, "bold": 900)
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @use "sass:map"
@@ -178,7 +178,7 @@ $heavy-weights: ("medium": 500, "bold": 700);
 // ("lightest": 100, "light": 300, "medium": 500, "bold": 700)
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @use "sass:map"
@@ -207,7 +207,7 @@ $weights: ("light": 300, "medium": 500);
 // ("light": 300, "medium": 700)
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @use "sass:map";
@@ -246,7 +246,7 @@ $prefixes-by-browser: ("firefox": moz, "safari": webkit, "ie": ms);
 // ("firefox": moz, "safari": webkit, "ie": ms, "opera": o)
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @use "sass:map"

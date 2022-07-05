@@ -46,7 +46,7 @@ ul, ol {
 @use 'foundation/lists';
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 // foundation/_code.sass
@@ -130,7 +130,7 @@ $radius: 3px;
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 // src/_corners.sass
@@ -194,7 +194,7 @@ $radius: 3px;
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 // src/_corners.sass
@@ -256,7 +256,7 @@ $radius: 3px;
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 // src/_corners.sass
@@ -326,7 +326,7 @@ $-radius: 3px;
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 // src/_corners.sass
@@ -373,7 +373,7 @@ code {
 );
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 // _library.sass
@@ -464,7 +464,7 @@ $-box-shadow: null;
 @include library.styles;
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 // _library.sass
@@ -574,7 +574,7 @@ library.$color: blue;
 @debug library.$color;  //=> blue
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 // _library.sass
@@ -651,7 +651,7 @@ ul, ol {
 @use 'foundation';
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 // foundation/_code.sass
@@ -730,7 +730,7 @@ code {
 @use 'code';
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 // code.css

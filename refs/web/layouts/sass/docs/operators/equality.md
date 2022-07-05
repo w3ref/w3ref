@@ -60,7 +60,7 @@ $theme: ("venus": #998099, "nebula": #d2e1dd);
 
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @debug 1px == 1px  // true

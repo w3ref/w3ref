@@ -27,7 +27,7 @@ LibSass, Ruby Sass и версия Dart Sass до 1.40.0 анализируют 
 @debug min(100px, calc(1rem + 10%)); // min(100px, 1rem + 10%)
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @debug calc(400px + 10%)  // calc(400px + 10%)
@@ -73,7 +73,7 @@ $width: calc(400px + 10%);
 
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 $width: calc(400px + 10%)
@@ -121,7 +121,7 @@ $width: calc(100% + 10px);
 @debug calc($width * 2); // calc((100% + 10px) * 2);
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 $width: calc(100% + 10px);
@@ -174,7 +174,7 @@ $padding: 12px;
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 $padding: 12px

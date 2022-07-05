@@ -65,4 +65,4 @@ Alpine.start()
 > If you imported Alpine into a bundle, you have to make sure you are registering any extension code IN BETWEEN when you import the `Alpine` global object, and when you initialize Alpine by calling `Alpine.start()`.
 
 
-[→ Read more about extending Alpine](/advanced/extending)
+[→ Read more about extending Alpine](./advanced/extending)

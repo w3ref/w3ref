@@ -15,7 +15,7 @@ title: dispatch
 </div>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="demo">
     <div x-data @notify="alert('Hello World!')">
         <button @click="$dispatch('notify')">
@@ -23,7 +23,7 @@ title: dispatch
         </button>
     </div>
 </div>
-<!-- END_VERBATIM -->
+```
 
 You can also pass data along with the dispatched event if you wish. This data will be accessible as the `.detail` property of the event:
 
@@ -35,13 +35,13 @@ You can also pass data along with the dispatched event if you wish. This data wi
 </div>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="demo">
     <div x-data @notify="alert($event.detail.message)">
         <button @click="$dispatch('notify', { message: 'Hello World!' })">Notify</button>
     </div>
 </div>
-<!-- END_VERBATIM -->
+```
 
 
 Under the hood, `$dispatch` is a wrapper for the more verbose API: `element.dispatchEvent(new CustomEvent(...))`

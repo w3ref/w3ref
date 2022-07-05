@@ -26,7 +26,7 @@ However, sometimes it is helpful to have an actual object that encapsulates all 
 </script>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div x-data="{ greeting: 'Hello' }" class="demo">
     <div x-data="{ name: 'Caleb' }">
         <button @click="sayHello($data)">Say Hello</button>
@@ -38,7 +38,7 @@ However, sometimes it is helpful to have an actual object that encapsulates all 
         alert(greeting + ' ' + name + '!')
     }
 </script>
-<!-- END_VERBATIM -->
+```
 
 Now when the button is pressed, the browser will alert `Hello Caleb!` because it was passed a data object that contained all the Alpine scope of the expression that called it (`@click="..."`).
 

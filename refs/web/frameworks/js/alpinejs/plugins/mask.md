@@ -70,11 +70,11 @@ Let's start by looking at the following simple example of a date field:
 <input x-mask="99/99/9999" placeholder="MM/DD/YYYY">
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="demo">
     <input x-data x-mask="99/99/9999" placeholder="MM/DD/YYYY">
 </div>
-<!-- END_VERBATIM -->
+```
 
 Notice how the text you type into the input field must adhere to the format provided by `x-mask`. In addition to enforcing numeric characters, the forward slashes `/` are also automatically added if a user doesn't type them first.
 
@@ -104,14 +104,14 @@ As you can see in the above example, every time a user types in the input, that 
 
 Try it for yourself by typing a number that starts with "34" and one that doesn't.
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="demo">
     <input x-data x-mask:dynamic="
         $input.startsWith('34') || $input.startsWith('37')
             ? '9999 999999 99999' : '9999 9999 9999 9999'
     ">
 </div>
-<!-- END_VERBATIM -->
+```
 
 `x-mask:dynamic` also accepts a function as a result of the expression and will automatically pass it the `$input` as the the first paramter. For example:
 
@@ -138,11 +138,11 @@ Here is a fully functioning money input mask:
 <input x-mask:dynamic="$money($input)">
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="demo" x-data>
     <input type="text" x-mask:dynamic="$money($input)" placeholder="0.00">
 </div>
-<!-- END_VERBATIM -->
+```
 
 If you wish to swap the periods for commas and vice versa (as is required in certain currencies), you can do so using the second optional parameter:
 
@@ -150,8 +150,8 @@ If you wish to swap the periods for commas and vice versa (as is required in cer
 <input x-mask:dynamic="$money($input, ',')">
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="demo" x-data>
     <input type="text" x-mask:dynamic="$money($input, ',')"  placeholder="0,00">
 </div>
-<!-- END_VERBATIM -->
+```

@@ -35,7 +35,7 @@ $sizes: 40px, 50px, 80px;
 
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 $sizes: 40px, 50px, 80px
@@ -111,7 +111,7 @@ $icons: ("eye": "\f112", "start": "\f12e", "stop": "\f12f");
 
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 $icons: ("eye": "\f112", "start": "\f12e", "stop": "\f12f")
@@ -191,7 +191,7 @@ $icons:
 
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 $icons: "eye" "\f112" 12px, "start" "\f12e" 16px, "stop" "\f12f" 10px

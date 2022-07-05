@@ -18,12 +18,12 @@ Here's a basic example of using `x-html` to display a user's username.
 </div>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="demo">
     <div x-data="{ username: '<strong>calebporzio</strong>' }">
         Username: <span x-html="username"></span>
     </div>
 </div>
-<!-- END_VERBATIM -->
+```
 
 Now the `<span>` tag's inner HTML will be set to "<strong>calebporzio</strong>".

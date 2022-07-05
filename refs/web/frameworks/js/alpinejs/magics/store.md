@@ -6,7 +6,7 @@ title: store
 
 # $store
 
-You can use `$store` to conveniently access global Alpine stores registered using [`Alpine.store(...)`](/globals/alpine-store). For example:
+You can use `$store` to conveniently access global Alpine stores registered using [`Alpine.store(...)`](./globals/alpine-store). For example:
 
 ```alpine
 <button x-data @click="$store.darkMode.toggle()">Toggle Dark Mode</button>
@@ -57,4 +57,4 @@ Here's the example from above but using it more simply as a boolean value:
 </script>
 ```
 
-[→ Read more about Alpine stores](/globals/alpine-store)
+[→ Read more about Alpine stores](./globals/alpine-store)

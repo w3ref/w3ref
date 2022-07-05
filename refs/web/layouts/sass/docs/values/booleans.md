@@ -23,7 +23,7 @@ category:
 @debug math.comparable(100px, 3in); // true
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @use "sass:math"
@@ -53,7 +53,7 @@ category:
 @debug not false; // true
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @debug true and true  // true
@@ -94,7 +94,7 @@ category:
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @mixin avatar($size, $circle: false)
@@ -147,7 +147,7 @@ category:
 @debug if(false, 10px, 30px); // 30px
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @debug if(true, 10px, 30px)  // 10px

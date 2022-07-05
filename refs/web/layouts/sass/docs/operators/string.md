@@ -23,7 +23,7 @@ Sass поддерживает несколько операторов, кото�
 @debug sans - serif; // sans-serif
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @debug "Helvetica" + " Neue"  // "Helvetica Neue"
@@ -48,7 +48,7 @@ Sass поддерживает несколько операторов, кото�
 @debug true + " is a boolean value"; // "true is a boolean value";
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @debug "Elapsed time: " + 10s  // "Elapsed time: 10s";
@@ -77,7 +77,7 @@ Sass поддерживает несколько операторов, кото�
 @debug - moz; // -moz
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @debug / 15px  // /15px

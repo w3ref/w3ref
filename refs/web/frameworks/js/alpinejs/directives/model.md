@@ -17,7 +17,7 @@ Here's a simple example of using `x-model` to bind the value of a text field to 
 </div>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="demo">
     <div x-data="{ message: '' }">
         <input type="text" x-model="message" placeholder="Type message...">
@@ -25,7 +25,7 @@ Here's a simple example of using `x-model` to bind the value of a text field to 
         <div class="pt-4" x-text="message"></div>
     </div>
 </div>
-<!-- END_VERBATIM -->
+```
 
 
 Now as the user types into the text field, the `message` will be reflected in the `<span>` tag.
@@ -43,7 +43,7 @@ We can use the same example as above but this time, we'll add a button to change
 </div>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="demo">
     <div x-data="{ message: '' }">
         <input type="text" x-model="message" placeholder="Type message...">
@@ -51,7 +51,7 @@ We can use the same example as above but this time, we'll add a button to change
         <button x-on:click="message = 'changed'">Change Message</button>
     </div>
 </div>
-<!-- END_VERBATIM -->
+```
 
 Now when the `<button>` is clicked, the input element's value will instantly be updated to "changed".
 
@@ -72,7 +72,7 @@ Now when the `<button>` is clicked, the input element's value will instantly be 
 <span x-text="message"></span>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="demo">
     <div x-data="{ message: '' }">
         <input type="text" x-model="message" placeholder="Type message">
@@ -80,7 +80,7 @@ Now when the `<button>` is clicked, the input element's value will instantly be 
         <div class="pt-4" x-text="message"></div>
     </div>
 </div>
-<!-- END_VERBATIM -->
+```
 
 <a name="textarea-inputs"></a>
 ## Textarea inputs
@@ -91,7 +91,7 @@ Now when the `<button>` is clicked, the input element's value will instantly be 
 <span x-text="message"></span>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="demo">
     <div x-data="{ message: '' }">
         <textarea x-model="message" placeholder="Type message"></textarea>
@@ -99,7 +99,7 @@ Now when the `<button>` is clicked, the input element's value will instantly be 
         <div class="pt-4" x-text="message"></div>
     </div>
 </div>
-<!-- END_VERBATIM -->
+```
 
 <a name="checkbox-inputs"></a>
 ## Checkbox inputs
@@ -113,7 +113,7 @@ Now when the `<button>` is clicked, the input element's value will instantly be 
 <label for="checkbox" x-text="show"></label>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="demo">
     <div x-data="{ open: '' }">
         <input type="checkbox" id="checkbox" x-model="open">
@@ -121,7 +121,7 @@ Now when the `<button>` is clicked, the input element's value will instantly be 
         <label for="checkbox" x-text="open"></label>
     </div>
 </div>
-<!-- END_VERBATIM -->
+```
 
 <a name="multiple-checkboxes-bound-to-array"></a>
 ### Multiple checkboxes bound to array
@@ -134,7 +134,7 @@ Now when the `<button>` is clicked, the input element's value will instantly be 
 Colors: <span x-text="colors"></span>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="demo">
     <div x-data="{ colors: [] }">
         <input type="checkbox" value="red" x-model="colors">
@@ -144,7 +144,7 @@ Colors: <span x-text="colors"></span>
         <div class="pt-4">Colors: <span x-text="colors"></span></div>
     </div>
 </div>
-<!-- END_VERBATIM -->
+```
 
 <a name="radio-inputs"></a>
 ## Radio inputs
@@ -156,7 +156,7 @@ Colors: <span x-text="colors"></span>
 Answer: <span x-text="answer"></span>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="demo">
     <div x-data="{ answer: '' }">
         <input type="radio" value="yes" x-model="answer">
@@ -165,7 +165,7 @@ Answer: <span x-text="answer"></span>
         <div class="pt-4">Answer: <span x-text="answer"></span></div>
     </div>
 </div>
-<!-- END_VERBATIM -->
+```
 
 <a name="select-inputs"></a>
 ## Select inputs
@@ -184,7 +184,7 @@ Answer: <span x-text="answer"></span>
 Color: <span x-text="color"></span>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="demo">
     <div x-data="{ color: '' }">
         <select x-model="color">
@@ -196,7 +196,7 @@ Color: <span x-text="color"></span>
         <div class="pt-4">Color: <span x-text="color"></span></div>
     </div>
 </div>
-<!-- END_VERBATIM -->
+```
 
 <a name="single-select-with-placeholder"></a>
 ### Single select with placeholder
@@ -213,7 +213,7 @@ Color: <span x-text="color"></span>
 ```
 
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="demo">
     <div x-data="{ color: '' }">
         <select x-model="color">
@@ -226,7 +226,7 @@ Color: <span x-text="color"></span>
         <div class="pt-4">Color: <span x-text="color"></span></div>
     </div>
 </div>
-<!-- END_VERBATIM -->
+```
 
 <a name="multiple-select"></a>
 ### Multiple select
@@ -241,7 +241,7 @@ Color: <span x-text="color"></span>
 Colors: <span x-text="color"></span>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="demo">
     <div x-data="{ color: '' }">
         <select x-model="color" multiple>
@@ -253,7 +253,7 @@ Colors: <span x-text="color"></span>
         <div class="pt-4">Color: <span x-text="color"></span></div>
     </div>
 </div>
-<!-- END_VERBATIM -->
+```
 
 <a name="dynamically-populated-select-options"></a>
 ### Dynamically populated Select Options
@@ -268,7 +268,7 @@ Colors: <span x-text="color"></span>
 Color: <span x-text="color"></span>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="demo">
     <div x-data="{ color: '' }">
         <select x-model="color">
@@ -280,7 +280,7 @@ Color: <span x-text="color"></span>
         <div class="pt-4">Color: <span x-text="color"></span></div>
     </div>
 </div>
-<!-- END_VERBATIM -->
+```
 
 <a name="modifiers"></a>
 ## Modifiers
@@ -359,7 +359,7 @@ You can access these utilities through a property called `_x_model` on the `x-mo
 </div>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="demo">
     <div x-data="{ username: 'calebporzio' }">
         <div x-ref="div" x-model="username"></div>
@@ -371,4 +371,4 @@ You can access these utilities through a property called `_x_model` on the `x-mo
         <span x-text="$refs.div._x_model.get()"></span>
     </div>
 </div>
-<!-- END_VERBATIM -->
+```

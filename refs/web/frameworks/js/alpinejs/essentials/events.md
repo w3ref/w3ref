@@ -98,4 +98,4 @@ In the above example, if we click the button in the first component, Alpine will
 
 Now, because in our second component we are listening for "foo" on the window (with `.window`), when the button is clicked, this listener will pick it up and log the "foo was dispatched" message.
 
-[→ Read more about x-on](/directives/on)
+[→ Read more about x-on](./directives/on)

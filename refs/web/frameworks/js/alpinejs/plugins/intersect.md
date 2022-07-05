@@ -62,7 +62,7 @@ For example, in the following snippet, `shown` will remain `false` until the ele
 </div>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="demo" style="height: 60px; overflow-y: scroll;" x-data x-ref="root">
     <a href="#" @click.prevent="$refs.root.scrollTo({ top: $refs.root.scrollHeight, behavior: 'smooth' })">Scroll Down 👇</a>
     <div style="height: 50vh"></div>
@@ -73,7 +73,7 @@ For example, in the following snippet, `shown` will remain `false` until the ele
         <div x-show="! shown">&nbsp;</div>
     </div>
 </div>
-<!-- END_VERBATIM -->
+```
 
 <a name="x-intersect-enter"></a>
 ### x-intersect:enter

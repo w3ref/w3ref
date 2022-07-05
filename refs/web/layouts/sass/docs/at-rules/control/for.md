@@ -29,7 +29,7 @@ $base-color: #036;
 
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 $base-color: #036

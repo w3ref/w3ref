@@ -15,12 +15,12 @@ Here's a basic example of using `x-text` to display a user's username.
 </div>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="demo">
     <div x-data="{ username: 'calebporzio' }">
         Username: <strong x-text="username"></strong>
     </div>
 </div>
-<!-- END_VERBATIM -->
+```
 
 Now the `<strong>` tag's inner text content will be set to "calebporzio".

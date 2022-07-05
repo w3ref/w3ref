@@ -38,7 +38,7 @@ category:
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 .alert
@@ -125,7 +125,7 @@ category:
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 .accordion
@@ -194,7 +194,7 @@ category:
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 .main aside:hover,
@@ -239,7 +239,7 @@ category:
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @mixin app-background($color)
@@ -304,7 +304,7 @@ category:
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @use "sass:selector"

@@ -19,7 +19,7 @@ Here's a simple example of using `x-modelable` to expose a variable for binding 
 </div>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="demo">
     <div x-data="{ number: 5 }">
         <div x-data="{ count: 0 }" x-modelable="count" x-model="number">
@@ -29,7 +29,7 @@ Here's a simple example of using `x-modelable` to expose a variable for binding 
         Number: <span x-text="number"></span>
     </div>
 </div>
-<!-- END_VERBATIM -->
+```
 
 As you can see the outer scope property "number" is now bound to the inner scope property "count".
 

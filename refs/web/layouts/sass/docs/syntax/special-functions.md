@@ -55,7 +55,7 @@ $roboto-font-path: "../fonts/roboto";
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 $roboto-font-path: "../fonts/roboto"
@@ -162,7 +162,7 @@ $logo-element: logo-bg;
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 $logo-element: logo-bg

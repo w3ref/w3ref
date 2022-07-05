@@ -37,7 +37,7 @@ category:
 @include corner-icon("mail", top, left);
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @mixin corner-icon($name, $top-or-bottom, $left-or-right)
@@ -105,7 +105,7 @@ LibSass и Ruby Sass в настоящее время используют ст�
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @mixin inline-animation($duration)
@@ -179,7 +179,7 @@ LibSass и Ruby Sass в настоящее время используют ст�
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 .example

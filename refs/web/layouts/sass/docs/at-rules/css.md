@@ -33,7 +33,7 @@ Sass поддерживает все at-правила, которые явля�
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @namespace svg url(http://www.w3.org/2000/svg)
@@ -84,7 +84,7 @@ Sass поддерживает все at-правила, которые явля�
 
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 .print-only
@@ -130,7 +130,7 @@ LibSass и более старые версии Dart Sass и Ruby Sass не по
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @media (width <= 700px)
@@ -170,7 +170,7 @@ $layout-breakpoint-small: 960px;
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 $layout-breakpoint-small: 960px
@@ -215,7 +215,7 @@ $layout-breakpoint-small: 960px
 
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @media (hover: hover)
@@ -268,7 +268,7 @@ $layout-breakpoint-small: 960px
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @mixin sticky-position
@@ -327,7 +327,7 @@ $layout-breakpoint-small: 960px
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @keyframes slide-in

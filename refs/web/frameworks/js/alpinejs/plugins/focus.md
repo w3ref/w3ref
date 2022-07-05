@@ -74,7 +74,7 @@ For example:
 </div>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div x-data="{ open: false }" class="demo">
     <div :class="open && 'opacity-50'">
         <button x-on:click="open = true">Open Dialog</button>
@@ -98,7 +98,7 @@ For example:
         </div>
     </div>
 </div>
-<!-- END_VERBATIM -->
+```
 
 <a name="nesting"></a>
 ### Nesting dialogs
@@ -135,7 +135,7 @@ Here is nesting in action:
 </div>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div x-data="{ open: false }" class="demo">
     <div :class="open && 'opacity-50'">
         <button x-on:click="open = true">Open Dialog</button>
@@ -179,7 +179,7 @@ Here is nesting in action:
         </div>
     </div>
 </div>
-<!-- END_VERBATIM -->
+```
 
 <a name="modifiers"></a>
 ### Modifiers
@@ -238,7 +238,7 @@ For example:
 </div>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="demo">
     <div x-data="{ open: false }">
         <button @click="open = true">Open Dialog</button>
@@ -252,7 +252,7 @@ For example:
         </div>
     </div>
 </div>
-<!-- END_VERBATIM -->
+```
 
 <a name="noreturn"></a>
 #### .noreturn
@@ -277,7 +277,7 @@ For example:
 </div>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="demo">
     <div
         x-data="{ open: false }"
@@ -299,7 +299,7 @@ For example:
         </div>
     </div>
 </div>
-<!-- END_VERBATIM -->
+```
 
 <a name="focus-magic"></a>
 ## $focus
@@ -338,7 +338,7 @@ Let's walk through a few examples of these utilities in use. The example below a
 </div>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="demo">
 <div
     x-data
@@ -351,7 +351,7 @@ Let's walk through a few examples of these utilities in use. The example below a
 </div>
 (Click a button, then use the arrow keys to move left and right)
 </div>
-<!-- END_VERBATIM -->
+```
 
 Notice how if the last button is focused, pressing "right arrow" won't do anything. Let's add the `.wrap()` method so that focus "wraps around":
 
@@ -366,7 +366,7 @@ Notice how if the last button is focused, pressing "right arrow" won't do anythi
 </div>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="demo">
 <div
     x-data
@@ -379,7 +379,7 @@ Notice how if the last button is focused, pressing "right arrow" won't do anythi
 </div>
 (Click a button, then use the arrow keys to move left and right)
 </div>
-<!-- END_VERBATIM -->
+```
 
 Now, let's add two buttons, one to focus the first element in the button group, and another focus the last element:
 
@@ -398,7 +398,7 @@ Now, let's add two buttons, one to focus the first element in the button group, 
 </div>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="demo" x-data>
 <button @click="$focus.within($refs.buttons).first()">Focus "First"</button>
 <button @click="$focus.within($refs.buttons).last()">Focus "Last"</button>
@@ -415,6 +415,6 @@ Now, let's add two buttons, one to focus the first element in the button group, 
     <button class="focus:outline-none focus:ring-2 focus:ring-cyan-400">Third</button>
 </div>
 </div>
-<!-- END_VERBATIM -->
+```
 
 Notice that we needed to add a `.within()` method for each button so that `$focus` knows to scope itself to a different element (the `div` wrapping the buttons).

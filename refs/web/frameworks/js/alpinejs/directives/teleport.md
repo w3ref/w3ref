@@ -43,7 +43,7 @@ Here's a contrived modal example:
 </body>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="demo" x-ref="root" id="modal2">
     <div x-data="{ open: false }">
         <button @click="open = ! open">Toggle Modal</button>
@@ -58,7 +58,7 @@ Here's a contrived modal example:
 
     <div class="py-4">Some other content placed AFTER the modal markup.</div>
 </div>
-<!-- END_VERBATIM -->
+```
 
 Notice how when toggling the modal, the actual modal contents show up AFTER the "Some other content..." element? This is because when Alpine is initializing, it sees `x-teleport="body"` and appends and initializes that element to the provided element selector.
 
@@ -84,7 +84,7 @@ To make this experience more seamless, you can "forward" events by simply regist
 </div>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="demo" x-ref="root" id="modal3">
     <div x-data="{ open: false }">
         <button @click="open = ! open">Toggle Modal</button>
@@ -97,7 +97,7 @@ To make this experience more seamless, you can "forward" events by simply regist
         </template>
     </div>
 </div>
-<!-- END_VERBATIM -->
+```
 
 Notice how we are now able to listen for events dispatched from within the teleported element from outside the `<template>` element itself?
 
@@ -130,7 +130,7 @@ Teleporting is especially helpful if you are trying to nest one modal within ano
 </div>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="demo" x-ref="root" id="modal4">
     <div x-data="{ open: false }">
         <button @click="open = ! open">Toggle Modal</button>
@@ -154,6 +154,6 @@ Teleporting is especially helpful if you are trying to nest one modal within ano
 
     <template x-teleport-target="modals3"></template>
 </div>
-<!-- END_VERBATIM -->
+```
 
 After toggling "on" both modals, they are authored as children, but will be rendered as sibling elements on the page, not within one another.

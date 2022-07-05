@@ -51,7 +51,7 @@ content {
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @use "sass:list"

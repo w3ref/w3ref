@@ -21,7 +21,7 @@ category:
 @debug 5px * 2px; // 10px*px (read "square pixels")
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @debug 100  // 100
@@ -43,7 +43,7 @@ category:
 @debug 6e-2; // 0.06
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @debug 5.2e3  // 5200
@@ -76,7 +76,7 @@ $degrees-per-second: math.div(20deg, 1s);
 @debug math.div(1, $degrees-per-second); // 0.05s/deg
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @debug 4px * 6px  // 24px*px (read "square pixels")
@@ -111,7 +111,7 @@ Sass будет автоматически конвертировать межд
 // Error: Incompatible units s and in.
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 // CSS defines one inch as 96 pixels.
@@ -148,7 +148,7 @@ $transition-speed: math.div(1s, 50px);
 }
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 $transition-speed: math.div(1s, 50px)
@@ -237,7 +237,7 @@ $transition-speed: math.div(1s, 50px)
 @debug 0.99999999991; // 1
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @debug 0.012345678912345; // 0.0123456789

@@ -29,7 +29,7 @@ category:
 @debug false or false; // false
 ```
 
-@tab Sass
+@tab SASS
 
 ```sass
 @debug not true  // false

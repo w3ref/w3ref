@@ -15,7 +15,7 @@ Alpine's `x-for` directive allows you to create DOM elements by iterating throug
 </ul>
 ```
 
-<!-- START_VERBATIM -->
+```alpinejs
 <div class="demo">
     <ul x-data="{ colors: ['Red', 'Orange', 'Yellow'] }">
         <template x-for="color in colors">
@@ -23,7 +23,7 @@ Alpine's `x-for` directive allows you to create DOM elements by iterating throug
         </template>
     </ul>
 </div>
-<!-- END_VERBATIM -->
+```
 
 There are two rules worth noting about `x-for`:
 
