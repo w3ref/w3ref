@@ -1,0 +1,7 @@
+import{_ as e}from"./plugin-vue_export-helper.21dcd24c.js";import{o as t,c as a,g as o}from"./app.674943b1.js";const n={},i=o(`<h1 id="root" tabindex="-1"><a class="header-anchor" href="#root" aria-hidden="true">#</a> $root</h1><p><code>$root</code> is a magic property that can be used to retrieve the root element of any Alpine component. In other words the closest element up the DOM tree that contains <code>x-data</code>.</p><div class="language-alpine ext-alpine line-numbers-mode"><pre class="language-alpine"><code>&lt;div x-data data-message=&quot;Hello World!&quot;&gt;
+    &lt;button @click=&quot;alert($root.dataset.message)&quot;&gt;Say Hi&lt;/button&gt;
+&lt;/div&gt;
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-alpinejs ext-alpinejs line-numbers-mode"><pre class="language-alpinejs"><code>&lt;div x-data data-message=&quot;Hello World!&quot; class=&quot;demo&quot;&gt;
+    &lt;button @click=&quot;alert($root.dataset.message)&quot;&gt;Say Hi&lt;/button&gt;
+&lt;/div&gt;
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,4),l=[i];function s(d,r){return t(),a("div",null,l)}var m=e(n,[["render",s],["__file","root.html.vue"]]);export{m as default};

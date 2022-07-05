@@ -1,0 +1,6 @@
+import{_ as e}from"./plugin-vue_export-helper.21dcd24c.js";import{o as n,c as i,g as t}from"./app.674943b1.js";const o={},a=t(`<h1 id="x-ignore" tabindex="-1"><a class="header-anchor" href="#x-ignore" aria-hidden="true">#</a> x-ignore</h1><p>By default, Alpine will crawl and initialize the entire DOM tree of an element containing <code>x-init</code> or <code>x-data</code>.</p><p>If for some reason, you don&#39;t want Alpine to touch a specific section of your HTML, you can prevent it from doing so using <code>x-ignore</code>.</p><div class="language-alpine ext-alpine line-numbers-mode"><pre class="language-alpine"><code>&lt;div x-data=&quot;{ label: &#39;From Alpine&#39; }&quot;&gt;
+    &lt;div x-ignore&gt;
+        &lt;span x-text=&quot;label&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>In the above example, the <code>&lt;span&gt;</code> tag will not contain &quot;From Alpine&quot; because we told Alpine to ignore the contents of the <code>div</code> completely.</p>`,5),l=[a];function d(r,c){return n(),i("div",null,l)}var p=e(o,[["render",d],["__file","ignore.html.vue"]]);export{p as default};

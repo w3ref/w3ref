@@ -1,0 +1,9 @@
+import{_ as e}from"./plugin-vue_export-helper.21dcd24c.js";import{o as t,c as n,g as l}from"./app.674943b1.js";const s={},a=l(`<h1 id="x-html" tabindex="-1"><a class="header-anchor" href="#x-html" aria-hidden="true">#</a> x-html</h1><p><code>x-html</code> sets the &quot;innerHTML&quot; property of an element to the result of a given expression.</p><blockquote><p>\u26A0\uFE0F Only use on trusted content and never on user-provided content. \u26A0\uFE0F Dynamically rendering HTML from third parties can easily lead to XSS vulnerabilities.</p></blockquote><p>Here&#39;s a basic example of using <code>x-html</code> to display a user&#39;s username.</p><div class="language-alpine ext-alpine line-numbers-mode"><pre class="language-alpine"><code>&lt;div x-data=&quot;{ username: &#39;&lt;strong&gt;calebporzio&lt;/strong&gt;&#39; }&quot;&gt;
+    Username: &lt;span x-html=&quot;username&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-alpinejs ext-alpinejs line-numbers-mode"><pre class="language-alpinejs"><code>&lt;div class=&quot;demo&quot;&gt;
+    &lt;div x-data=&quot;{ username: &#39;&lt;strong&gt;calebporzio&lt;/strong&gt;&#39; }&quot;&gt;
+        Username: &lt;span x-html=&quot;username&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>Now the <code>&lt;span&gt;</code> tag&#39;s inner HTML will be set to &quot;<strong>calebporzio</strong>&quot;.</p>`,7),i=[a];function o(r,d){return t(),n("div",null,i)}var m=e(s,[["render",o],["__file","html.html.vue"]]);export{m as default};
